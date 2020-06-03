@@ -32,28 +32,38 @@ SWD Programmer/Debugger: [Segger](https://www.digikey.com/product-detail/en/segg
 Adafruit has provided a great [tutorial](https://learn.adafruit.com/how-to-program-samd-bootloaders) for flashing the bootloader onto the board using the segger SWD programmer. It's easier than it looks.
 
 
-You probably already have the booloader loader on your computer! Arduino installs them when you install the board files.
+You probably already have the bootloader loader on your computer! Arduino installs them when you install the board files.
 
 
 ![files](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/bootloaders.JPG)
 
 
-## Projects - Pickathon Music Festival
+# Projects - Pickathon Music Festival
 
-I completed a project at [Pickathon 2019 music festival](https://www.instagram.com/p/B0nMJXHBQjl/) using radio modules MP3 Players based on a derivative of the reference design.  Both the sender and receiver module used the same board.
+I completed a project at [Pickathon 2019 music festival](https://www.instagram.com/p/B0nMJXHBQjl/) using radio modules and MP3 Players that socketed into a PCB very similar to the reference design above.
 
 ![files](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/sender_and_receiver.JPG)
 
-The radio modules socketed into an SPI header I exposed.
+Both the sender and receiver boards had radio modules socketed into an SPI header that was exposed via a 8-pin header.
 ![radio](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/radio_module.JPG)
 
-The receiver boards had a radio module as well as a mini-MP3 module.
+Each receiver board had a mini-MP3 module. When triggered, the MP3 modules output recorded poetry files to small speakers. The MP3 modules worked really well. The 3-watt amplifier sounded pretty good with small speakers in quiet spaces.
 ![files](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/mini_mp3_module.JPG)
 
 
-# Parts list
+## Parts list
 - generic Radio module Arduino NRF24L01+ 2.4GHz Wireless RF [amazon](https://www.amazon.com/gp/product/B07GZ17ZWS/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
 - generic Mini-MP3 module [aliexpress](https://www.aliexpress.com/item/32787304159.html?spm=a2g0s.9042311.0.0.27424c4dwHyDU7)
 
 
 ## Programming
+
+The radio module library is here:
+- include <nRF24L01.h>  //https://github.com/nRF24/RF24
+
+The MP3 radio module is here:
+- include <DFPlayerMini_Fast.h>  //https://github.com/PowerBroker2/DFPlayerMini_Fast
+
+I slightly modified the DFPlayerMini library so it would work with hardware serial and not software serial as it was originally designed.
+
+The micro-controller communicated with the MP3 player using serial RX/TX.
