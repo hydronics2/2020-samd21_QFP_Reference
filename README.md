@@ -38,20 +38,20 @@ You probably already have the booloader loader on your computer! Arduino install
 ![files](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/bootloaders.JPG)
 
 
-## Projects
+## Projects - Pickathon Music Festival
 
-I completed a project at [Pickathon 2019 music festival](https://www.instagram.com/p/B0nMJXHBQjl/) using radio modules using this chip.  Both the sender and receiver module used the same board.
+I completed a project at [Pickathon 2019 music festival](https://www.instagram.com/p/B0nMJXHBQjl/) using radio modules MP3 Players based on a derivative of the reference design.  Both the sender and receiver module used the same board.
 
-![files](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/sender_and_reciever.JPG)
+![files](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/sender_and_receiver.JPG)
 
 The radio modules socketed into an SPI header I exposed.
 ![radio](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/radio_module.JPG)
 
 The receiver boards had a radio module as well as a mini-MP3 module.
-![files](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/mini_MP3_module.JPG)
+![files](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/mini_mp3_module.JPG)
 
 
-Parts list
+# Parts list
 - generic Radio module Arduino NRF24L01+ 2.4GHz Wireless RF [amazon](https://www.amazon.com/gp/product/B07GZ17ZWS/ref=ppx_yo_dt_b_asin_title_o01_s00?ie=UTF8&psc=1)
 - generic Mini-MP3 module [aliexpress](https://www.aliexpress.com/item/32787304159.html?spm=a2g0s.9042311.0.0.27424c4dwHyDU7)
 
