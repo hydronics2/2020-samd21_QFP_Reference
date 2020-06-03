@@ -30,3 +30,7 @@ SWD Programmer/Debugger: [Segger](https://www.digikey.com/product-detail/en/segg
 ## Programming
 
 Adafruit has provided a great [tutorial](https://learn.adafruit.com/how-to-program-samd-bootloaders) for flashing the bootloader onto the board using the segger SWD programmer.
+
+
+You probably already have the booloader loader on your computer! Arduino installs them when you install the board files.
+![files](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/bootloaders.JPG)
