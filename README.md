@@ -29,7 +29,7 @@ SWD Programmer/Debugger: [Segger](https://www.digikey.com/product-detail/en/segg
 
 ## Programming
 
-Adafruit has provided a great [tutorial](https://learn.adafruit.com/how-to-program-samd-bootloaders) for flashing the bootloader onto the board using the segger SWD programmer.
+Adafruit has provided a great [tutorial](https://learn.adafruit.com/how-to-program-samd-bootloaders) for flashing the bootloader onto the board using the segger SWD programmer. It's easier than it looks.
 
 
 You probably already have the booloader loader on your computer! Arduino installs them when you install the board files.
