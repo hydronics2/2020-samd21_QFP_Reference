@@ -4,7 +4,7 @@ This is a reference design for a SAMD21 for easy SWD programming and testing.  T
 
 The QFP package is pretty easy to solder and gives you about the same amount of pins as the original Aruduino 328P.
 
-![](https://github.com/hydronics2/samd21_QFP_reference_PCB/blob/master/pics/PCB_top.png)
+![](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/PCB_top.png)
 
 
 You can order boards from Oshpark using this link: [project](https://oshpark.com/shared_projects/W1OeQO5j)
@@ -25,4 +25,8 @@ Here's a list of parts:
 
 SWD Programmer/Debugger: [Segger](https://www.digikey.com/product-detail/en/segger-microcontroller-systems/8.08.91-J-LINK-EDU-MINI/899-1061-ND/7387472)
 
-![schematic](https://github.com/hydronics2/samd21_QFP_reference_PCB/blob/master/schematic.JPG)
+![schematic](https://github.com/hydronics2/2020-samd21_QFP_Reference/blob/master/pics/schematic.JPG)
+
+## Programming
+
+Adafruit has provided a great [tutorial](https://learn.adafruit.com/how-to-program-samd-bootloaders) for flashing the bootloader onto the board using the segger SWD programmer.
